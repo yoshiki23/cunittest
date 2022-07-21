@@ -14,3 +14,6 @@ add_executable(UnitTest test/unitTest.c add/src/add.c)
 # unitTest.out作成時に libcunit.aをリンク
 target_link_libraries(UnitTest cunit)
 
+# コンパイルとリンクオプションに -coverageを追加
+target_compile_options(UnitTest PUBLIC -coverage)
+target_link_options(UnitTest PUBLIC -coverage)

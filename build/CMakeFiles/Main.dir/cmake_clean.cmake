@@ -1,11 +1,11 @@
-FILE(REMOVE_RECURSE
-  "CMakeFiles/Main.dir/main.c.o"
+file(REMOVE_RECURSE
   "CMakeFiles/Main.dir/add/src/add.c.o"
-  "Main.pdb"
+  "CMakeFiles/Main.dir/main.c.o"
   "Main"
+  "Main.pdb"
 )
 
 # Per-language clean rules from dependency scanning.
-FOREACH(lang C)
-  INCLUDE(CMakeFiles/Main.dir/cmake_clean_${lang}.cmake OPTIONAL)
-ENDFOREACH(lang)
+foreach(lang C)
+  include(CMakeFiles/Main.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

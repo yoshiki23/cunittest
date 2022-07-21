@@ -1,11 +1,11 @@
-FILE(REMOVE_RECURSE
-  "CMakeFiles/UnitTest.dir/test/unitTest.c.o"
+file(REMOVE_RECURSE
   "CMakeFiles/UnitTest.dir/add/src/add.c.o"
-  "UnitTest.pdb"
+  "CMakeFiles/UnitTest.dir/test/unitTest.c.o"
   "UnitTest"
+  "UnitTest.pdb"
 )
 
 # Per-language clean rules from dependency scanning.
-FOREACH(lang C)
-  INCLUDE(CMakeFiles/UnitTest.dir/cmake_clean_${lang}.cmake OPTIONAL)
-ENDFOREACH(lang)
+foreach(lang C)
+  include(CMakeFiles/UnitTest.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()
