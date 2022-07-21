@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/iyoshiki/work/github/cunittest/add.c
+add.h
+/home/iyoshiki/work/github/cunittest/add.h
+
+/home/iyoshiki/work/github/cunittest/add.h
+
+/home/iyoshiki/work/github/cunittest/unitTest.c
+CUnit/CUnit.h
+-
+CUnit/Automated.h
+-
+add.h
+/home/iyoshiki/work/github/cunittest/add.h
+

@@ -1,0 +1,1 @@
+/usr/bin/cc      CMakeFiles/unitTest.out.dir/add.c.o CMakeFiles/unitTest.out.dir/unitTest.c.o  -o unitTest.out -rdynamic -lcunit 

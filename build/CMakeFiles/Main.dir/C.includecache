@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+.././add/include/add.h
+
+/home/iyoshiki/work/github/cunittest/add/src/add.c
+add.h
+-
+
+/home/iyoshiki/work/github/cunittest/main.c
+stdio.h
+-
+add.h
+-
+
