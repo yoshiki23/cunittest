@@ -7,9 +7,13 @@ project(unitTest_cmake C)
 include_directories(./add/include)
 
 # Main という実行ファイルを main.cと add/src/add.c から作成
-add_executable(Main main.c add/src/add.c) 
+add_executable(Main main.c add/src/add.c)
 
 # UnitTest という実行ファイルを test/unitTest.c と add/src/add.c から作成
 add_executable(UnitTest test/unitTest.c add/src/add.c)
 # unitTest.out作成時に libcunit.aをリンク
 target_link_libraries(UnitTest cunit)
+
+# コンパイルとリンクオプションに -coverageを追加
+target_compile_options(UnitTest PUBLIC -coverage)
+target_link_options(UnitTest PUBLIC -coverage)
